@@ -1,4 +1,4 @@
-"""Selected SMC analysis methods from a private trading bot.
+"""Selected SMC analysis methods from my private trading bot.
 
 This standalone module omits signal generation, entry rules, confluence scoring,
 risk management, exchange connections, credentials and production orchestration.
@@ -11,7 +11,6 @@ import pandas as pd
 from pandas import DataFrame
 
 class SMCAnalyzer:
-    """Selected OHLCV analysis methods for a public engineering portfolio."""
 
     def __init__(self):
         self._cache = {}
