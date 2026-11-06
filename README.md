@@ -13,6 +13,10 @@ The project is intentionally limited to the analysis layer. Trading execution, s
 - `docs/ENGINEERING_NOTES.md` — timing assumptions, architecture boundaries and limitations
 - `requirements.txt` — Python dependencies
 
+## Automated testing
+
+The [GitHub Actions workflow](.github/workflows/tests.yml) runs `python -m pytest -q` on Python 3.11 and 3.12 for each push to `main` and every pull request. This checks the published analyzer against its existing synthetic tests; it does not validate live-trading performance.
+
 ## Quick start
 
 ```bash
